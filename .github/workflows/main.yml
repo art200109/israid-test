@@ -17,7 +17,7 @@ jobs:
         run: |
           cp ./server/package.json ./
           cp ./server/package-lock.json* ./
-          npm ci
+          npm install
           npm run build --if-present
         env:
           CI: true
